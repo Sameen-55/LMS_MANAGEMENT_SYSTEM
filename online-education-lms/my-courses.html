@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Courses | Online Education</title>
+    <meta name="description" content="View your enrolled courses and resume learning progress." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="logo">ONLINE <span>EDUCATION</span></a>
+        <div class="main-nav" id="mainNav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="login.html" class="btn btn-secondary nav-cta">Logout</a></li>
+          </ul>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <button class="mobile-toggle" type="button" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <div>
+            <div class="breadcrumbs"><a href="dashboard.html">Dashboard</a> <span>/</span> <span>My Courses</span></div>
+            <h1>My enrolled courses</h1>
+          </div>
+          <a href="courses.html" class="btn btn-primary">Browse More Courses</a>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 18px;">
+        <div class="container">
+          <div class="course-grid">
+            <div class="my-course-card">
+              <div class="card-top">
+                <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80');"></div>
+                <div style="flex:1;">
+                  <h3>Web Development</h3>
+                  <div class="meta"><span>Sarah Malik</span><span>75%</span></div>
+                </div>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+              <div class="menu-actions">
+                <a href="learning.html" class="btn btn-primary">Continue Learning</a>
+              </div>
+            </div>
+
+            <div class="my-course-card">
+              <div class="card-top">
+                <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=900&q=80');"></div>
+                <div style="flex:1;">
+                  <h3>Python Programming</h3>
+                  <div class="meta"><span>Aisha Khan</span><span>45%</span></div>
+                </div>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 45%;"></div></div>
+              <div class="menu-actions">
+                <a href="learning.html" class="btn btn-secondary">Continue Learning</a>
+              </div>
+            </div>
+
+            <div class="my-course-card">
+              <div class="card-top">
+                <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80');"></div>
+                <div style="flex:1;">
+                  <h3>Artificial Intelligence</h3>
+                  <div class="meta"><span>Omar Ali</span><span>30%</span></div>
+                </div>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 30%;"></div></div>
+              <div class="menu-actions">
+                <a href="learning.html" class="btn btn-primary">Continue Learning</a>
+              </div>
+            </div>
+
+            <div class="my-course-card">
+              <div class="card-top">
+                <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&q=80');"></div>
+                <div style="flex:1;">
+                  <h3>Data Science Essentials</h3>
+                  <div class="meta"><span>Maria Hassan</span><span>60%</span></div>
+                </div>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
+              <div class="menu-actions">
+                <a href="learning.html" class="btn btn-secondary">Continue Learning</a>
+              </div>
+            </div>
+
+            <div class="my-course-card">
+              <div class="card-top">
+                <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80');"></div>
+                <div style="flex:1;">
+                  <h3>Graphic Design</h3>
+                  <div class="meta"><span>Noor Fatima</span><span>83%</span></div>
+                </div>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 83%;"></div></div>
+              <div class="menu-actions">
+                <a href="learning.html" class="btn btn-primary">Continue Learning</a>
+              </div>
+            </div>
+
+            <div class="my-course-card">
+              <div class="card-top">
+                <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80');"></div>
+                <div style="flex:1;">
+                  <h3>Digital Marketing</h3>
+                  <div class="meta"><span>Hammad Raza</span><span>58%</span></div>
+                </div>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 58%;"></div></div>
+              <div class="menu-actions">
+                <a href="learning.html" class="btn btn-secondary">Continue Learning</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <a href="index.html" class="logo">ONLINE <span>EDUCATION</span></a>
+            <p style="margin-top: 18px; color: rgba(255,255,255,0.72);">Keep learning with practical, mentor-guided education designed for meaningful progress.</p>
+          </div>
+          <div class="footer-col">
+            <h4>My Learning</h4>
+            <ul class="footer-links">
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="learning.html">Learning</a></li>
+              <li><a href="profile.html">Profile</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="footer-links">
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="instructors.html">Instructors</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="footer-links">
+              <li><a href="mailto:support@onlineeducation.com">support@onlineeducation.com</a></li>
+              <li><a href="tel:+923001234567">+92 300 1234567</a></li>
+              <li><span>Karachi, Pakistan</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 Online Education. All rights reserved.</p>
+          <a href="#" class="btn btn-secondary">Back to Top</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

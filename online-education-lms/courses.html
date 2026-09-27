@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses | Online Education</title>
+    <meta name="description" content="Browse courses in web development, programming, AI, data science, design and marketing." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="logo">ONLINE <span>EDUCATION</span></a>
+        <div class="main-nav" id="mainNav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html" class="active">Courses</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html" class="btn btn-primary nav-cta">Get Started</a></li>
+          </ul>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <button class="mobile-toggle" type="button" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <div>
+            <div class="breadcrumbs"><a href="index.html">Home</a> <span>/</span> <span>Courses</span></div>
+            <h1>Explore our course catalogue</h1>
+            <p>Choose from practical, future-ready courses designed to help you learn faster and grow professionally.</p>
+          </div>
+          <a href="register.html" class="btn btn-primary">Enroll Today</a>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 20px;">
+        <div class="container">
+          <div class="filter-bar">
+            <div class="search-box">
+              <i class="fas fa-search"></i>
+              <input type="text" id="courseSearch" placeholder="Search courses..." aria-label="Search courses" />
+            </div>
+            <div class="filter-chips" id="categoryFilters">
+              <button class="filter-chip active" type="button" data-category="all">All</button>
+              <button class="filter-chip" type="button" data-category="web development">Web Development</button>
+              <button class="filter-chip" type="button" data-category="programming">Programming</button>
+              <button class="filter-chip" type="button" data-category="artificial intelligence">Artificial Intelligence</button>
+              <button class="filter-chip" type="button" data-category="data science">Data Science</button>
+              <button class="filter-chip" type="button" data-category="design">Design</button>
+              <button class="filter-chip" type="button" data-category="marketing">Marketing</button>
+            </div>
+          </div>
+
+          <div class="course-grid" id="courseGrid">
+            <article class="course-card" data-category="web development">
+              <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80');"><div class="course-overlay"></div></div>
+              <div class="course-body">
+                <span class="badge">Web Development</span>
+                <h3 class="course-title">Full-Stack Development</h3>
+                <div class="course-meta">
+                  <span><i class="fas fa-user"></i> Sarah Malik</span>
+                  <span><i class="fas fa-star"></i> 4.9</span>
+                  <span><i class="fas fa-clock"></i> 12 weeks</span>
+                </div>
+                <div class="course-footer">
+                  <span class="course-price">$99</span>
+                  <a href="course-details.html" class="btn btn-primary">Enroll</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card" data-category="programming">
+              <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=900&q=80');"><div class="course-overlay"></div></div>
+              <div class="course-body">
+                <span class="badge">Programming</span>
+                <h3 class="course-title">Python Programming</h3>
+                <div class="course-meta">
+                  <span><i class="fas fa-user"></i> Aisha Khan</span>
+                  <span><i class="fas fa-star"></i> 4.8</span>
+                  <span><i class="fas fa-clock"></i> 8 weeks</span>
+                </div>
+                <div class="course-footer">
+                  <span class="course-price">$89</span>
+                  <a href="course-details.html" class="btn btn-primary">Enroll</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card" data-category="artificial intelligence">
+              <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80');"><div class="course-overlay"></div></div>
+              <div class="course-body">
+                <span class="badge">AI</span>
+                <h3 class="course-title">AI for Beginners</h3>
+                <div class="course-meta">
+                  <span><i class="fas fa-user"></i> Omar Ali</span>
+                  <span><i class="fas fa-star"></i> 4.9</span>
+                  <span><i class="fas fa-clock"></i> 10 weeks</span>
+                </div>
+                <div class="course-footer">
+                  <span class="course-price">$129</span>
+                  <a href="course-details.html" class="btn btn-primary">Enroll</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card" data-category="data science">
+              <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&q=80');"><div class="course-overlay"></div></div>
+              <div class="course-body">
+                <span class="badge">Data Science</span>
+                <h3 class="course-title">Data Science Essentials</h3>
+                <div class="course-meta">
+                  <span><i class="fas fa-user"></i> Maria Hassan</span>
+                  <span><i class="fas fa-star"></i> 4.7</span>
+                  <span><i class="fas fa-clock"></i> 9 weeks</span>
+                </div>
+                <div class="course-footer">
+                  <span class="course-price">$119</span>
+                  <a href="course-details.html" class="btn btn-primary">Enroll</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card" data-category="design">
+              <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80');"><div class="course-overlay"></div></div>
+              <div class="course-body">
+                <span class="badge">Design</span>
+                <h3 class="course-title">Graphic Design Masterclass</h3>
+                <div class="course-meta">
+                  <span><i class="fas fa-user"></i> Noor Fatima</span>
+                  <span><i class="fas fa-star"></i> 4.8</span>
+                  <span><i class="fas fa-clock"></i> 6 weeks</span>
+                </div>
+                <div class="course-footer">
+                  <span class="course-price">$79</span>
+                  <a href="course-details.html" class="btn btn-primary">Enroll</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card" data-category="marketing">
+              <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80');"><div class="course-overlay"></div></div>
+              <div class="course-body">
+                <span class="badge">Marketing</span>
+                <h3 class="course-title">Digital Marketing Growth</h3>
+                <div class="course-meta">
+                  <span><i class="fas fa-user"></i> Hammad Raza</span>
+                  <span><i class="fas fa-star"></i> 4.6</span>
+                  <span><i class="fas fa-clock"></i> 7 weeks</span>
+                </div>
+                <div class="course-footer">
+                  <span class="course-price">$95</span>
+                  <a href="course-details.html" class="btn btn-primary">Enroll</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card" data-category="web development">
+              <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80');"><div class="course-overlay"></div></div>
+              <div class="course-body">
+                <span class="badge">Web Development</span>
+                <h3 class="course-title">Frontend Development</h3>
+                <div class="course-meta">
+                  <span><i class="fas fa-user"></i> Bilal Ahmed</span>
+                  <span><i class="fas fa-star"></i> 4.9</span>
+                  <span><i class="fas fa-clock"></i> 6 weeks</span>
+                </div>
+                <div class="course-footer">
+                  <span class="course-price">$84</span>
+                  <a href="course-details.html" class="btn btn-primary">Enroll</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card" data-category="programming">
+              <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80');"><div class="course-overlay"></div></div>
+              <div class="course-body">
+                <span class="badge">Programming</span>
+                <h3 class="course-title">JavaScript Fundamentals</h3>
+                <div class="course-meta">
+                  <span><i class="fas fa-user"></i> Zara Iqbal</span>
+                  <span><i class="fas fa-star"></i> 4.8</span>
+                  <span><i class="fas fa-clock"></i> 5 weeks</span>
+                </div>
+                <div class="course-footer">
+                  <span class="course-price">$72</span>
+                  <a href="course-details.html" class="btn btn-primary">Enroll</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card" data-category="artificial intelligence">
+              <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80');"><div class="course-overlay"></div></div>
+              <div class="course-body">
+                <span class="badge">AI</span>
+                <h3 class="course-title">Machine Learning Lab</h3>
+                <div class="course-meta">
+                  <span><i class="fas fa-user"></i> Fiza Shah</span>
+                  <span><i class="fas fa-star"></i> 4.9</span>
+                  <span><i class="fas fa-clock"></i> 11 weeks</span>
+                </div>
+                <div class="course-footer">
+                  <span class="course-price">$149</span>
+                  <a href="course-details.html" class="btn btn-primary">Enroll</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card" data-category="data science">
+              <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=80');"><div class="course-overlay"></div></div>
+              <div class="course-body">
+                <span class="badge">Data Science</span>
+                <h3 class="course-title">Power BI Analytics</h3>
+                <div class="course-meta">
+                  <span><i class="fas fa-user"></i> Noman Ali</span>
+                  <span><i class="fas fa-star"></i> 4.7</span>
+                  <span><i class="fas fa-clock"></i> 4 weeks</span>
+                </div>
+                <div class="course-footer">
+                  <span class="course-price">$69</span>
+                  <a href="course-details.html" class="btn btn-primary">Enroll</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card" data-category="design">
+              <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=900&q=80');"><div class="course-overlay"></div></div>
+              <div class="course-body">
+                <span class="badge">Design</span>
+                <h3 class="course-title">Brand Identity Design</h3>
+                <div class="course-meta">
+                  <span><i class="fas fa-user"></i> Sana Qureshi</span>
+                  <span><i class="fas fa-star"></i> 4.8</span>
+                  <span><i class="fas fa-clock"></i> 5 weeks</span>
+                </div>
+                <div class="course-footer">
+                  <span class="course-price">$85</span>
+                  <a href="course-details.html" class="btn btn-primary">Enroll</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card" data-category="marketing">
+              <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80');"><div class="course-overlay"></div></div>
+              <div class="course-body">
+                <span class="badge">Marketing</span>
+                <h3 class="course-title">SEO & Content Marketing</h3>
+                <div class="course-meta">
+                  <span><i class="fas fa-user"></i> David Amir</span>
+                  <span><i class="fas fa-star"></i> 4.7</span>
+                  <span><i class="fas fa-clock"></i> 8 weeks</span>
+                </div>
+                <div class="course-footer">
+                  <span class="course-price">$92</span>
+                  <a href="course-details.html" class="btn btn-primary">Enroll</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <a href="index.html" class="logo">ONLINE <span>EDUCATION</span></a>
+            <p style="margin-top: 18px; color: rgba(255,255,255,0.72);">Your next skill starts here with a flexible learning ecosystem designed for career growth.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Explore</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="instructors.html">Instructors</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Support</h4>
+            <ul class="footer-links">
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="footer-links">
+              <li><a href="mailto:support@onlineeducation.com">support@onlineeducation.com</a></li>
+              <li><a href="tel:+923001234567">+92 300 1234567</a></li>
+              <li><span>Karachi, Pakistan</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 Online Education. All rights reserved.</p>
+          <a href="#" class="btn btn-secondary">Back to Top</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+  </body>
+</html>

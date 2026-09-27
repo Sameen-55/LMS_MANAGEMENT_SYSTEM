@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard | Online Education</title>
+    <meta name="description" content="Student dashboard with enrolled courses, progress, assignments, certificates and upcoming classes." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="logo">ONLINE <span>EDUCATION</span></a>
+        <div class="main-nav" id="mainNav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html" class="btn btn-secondary nav-cta">Logout</a></li>
+          </ul>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <button class="mobile-toggle" type="button" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="dashboard-page">
+      <div class="container dashboard-shell">
+        <aside class="dashboard-sidebar">
+          <div class="user-badge">
+            <div class="avatar">AS</div>
+            <div>
+              <strong style="display:block;">Amina Shah</strong>
+              <span class="muted-text">Student</span>
+            </div>
+          </div>
+          <ul class="sidebar-menu">
+            <li><a href="dashboard.html" class="active"><i class="fas fa-chart-pie"></i> Dashboard</a></li>
+            <li><a href="my-courses.html"><i class="fas fa-book"></i> My Courses</a></li>
+            <li><a href="learning.html"><i class="fas fa-play-circle"></i> Progress</a></li>
+            <li><a href="#"><i class="fas fa-tasks"></i> Assignments</a></li>
+            <li><a href="#"><i class="fas fa-certificate"></i> Certificates</a></li>
+            <li><a href="#"><i class="fas fa-message"></i> Messages</a></li>
+            <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+            <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+          </ul>
+        </aside>
+
+        <div class="dashboard-content">
+          <div class="dashboard-hero">
+            <div>
+              <div class="eyebrow">Overview</div>
+              <h1>Welcome back, Amina</h1>
+            </div>
+            <a href="learning.html" class="btn btn-primary">Continue Learning</a>
+          </div>
+
+          <div class="dashboard-stat-grid">
+            <div class="dashboard-stat">
+              <span>Enrolled Courses</span>
+              <strong>06</strong>
+            </div>
+            <div class="dashboard-stat">
+              <span>Completed Courses</span>
+              <strong>02</strong>
+            </div>
+            <div class="dashboard-stat">
+              <span>Certificates</span>
+              <strong>03</strong>
+            </div>
+            <div class="dashboard-stat">
+              <span>Pending Assignments</span>
+              <strong>04</strong>
+            </div>
+          </div>
+
+          <div class="dashboard-grid" style="grid-template-columns: 1.2fr 0.8fr;">
+            <div class="progress-card">
+              <h3>Course Progress</h3>
+              <div class="progress-list">
+                <div class="progress-item">
+                  <header><span>Web Development</span><span>75%</span></header>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+                </div>
+                <div class="progress-item">
+                  <header><span>Python Programming</span><span>45%</span></header>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 45%;"></div></div>
+                </div>
+                <div class="progress-item">
+                  <header><span>Artificial Intelligence</span><span>30%</span></header>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 30%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard-card">
+              <h3>Upcoming Classes</h3>
+              <div class="upcoming-list">
+                <div class="upcoming-item">
+                  <div class="date-pill">Oct<br/>05</div>
+                  <div>
+                    <strong>Web Development</strong>
+                    <span>Live session · 09:00 AM</span>
+                  </div>
+                </div>
+                <div class="upcoming-item">
+                  <div class="date-pill">Oct<br/>08</div>
+                  <div>
+                    <strong>AI Workshop</strong>
+                    <span>Mentor review · 03:30 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-grid" style="grid-template-columns: 1.1fr 0.9fr;">
+            <div class="dashboard-card">
+              <h3>Continue Learning</h3>
+              <div class="course-summary" style="margin-top: 18px;">
+                <div class="my-course-card">
+                  <div class="card-top">
+                    <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80');"></div>
+                    <div style="flex:1;">
+                      <h3>Web Development</h3>
+                      <div class="meta"><span>Sarah Malik</span><span>75%</span></div>
+                    </div>
+                  </div>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+                  <div class="menu-actions">
+                    <a href="learning.html" class="btn btn-primary">Continue</a>
+                  </div>
+                </div>
+                <div class="my-course-card">
+                  <div class="card-top">
+                    <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=900&q=80');"></div>
+                    <div style="flex:1;">
+                      <h3>Python Programming</h3>
+                      <div class="meta"><span>Aisha Khan</span><span>45%</span></div>
+                    </div>
+                  </div>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 45%;"></div></div>
+                  <div class="menu-actions">
+                    <a href="learning.html" class="btn btn-secondary">Resume</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard-card">
+              <h3>Recent Activity</h3>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div>
+                    <strong>Completed JavaScript quiz</strong>
+                    <span>Today, 10:15 AM</span>
+                  </div>
+                  <span class="pill success">Done</span>
+                </div>
+                <div class="activity-item">
+                  <div>
+                    <strong>Uploaded portfolio draft</strong>
+                    <span>Yesterday, 11:30 AM</span>
+                  </div>
+                  <span class="pill primary">New</span>
+                </div>
+                <div class="activity-item">
+                  <div>
+                    <strong>Submitted UI assignment</strong>
+                    <span>Mon, 04:45 PM</span>
+                  </div>
+                  <span class="pill warning">Pending Review</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <a href="index.html" class="logo">ONLINE <span>EDUCATION</span></a>
+            <p style="margin-top: 18px; color: rgba(255,255,255,0.72);">Progress with structure, mentorship, and practical learning that moves your career forward.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Navigate</h4>
+            <ul class="footer-links">
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="my-courses.html">My Courses</a></li>
+              <li><a href="learning.html">Learning</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <ul class="footer-links">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="footer-links">
+              <li><a href="mailto:support@onlineeducation.com">support@onlineeducation.com</a></li>
+              <li><a href="tel:+923001234567">+92 300 1234567</a></li>
+              <li><span>Karachi, Pakistan</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2026 Online Education. All rights reserved.</p>
+          <a href="#" class="btn btn-secondary">Back to Top</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

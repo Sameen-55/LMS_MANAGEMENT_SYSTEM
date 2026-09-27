@@ -1,0 +1,259 @@
+.dashboard-page .hero {
+  padding-top: 50px;
+}
+
+.dashboard-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.dashboard-hero h1 {
+  font-size: clamp(2.1rem, 3vw, 3rem);
+  margin: 0;
+}
+
+.muted-text {
+  color: rgba(255,255,255,0.72);
+}
+
+body.light-mode .muted-text {
+  color: var(--text-soft);
+}
+
+.summary-card h4,
+.dashboard-card h3,
+.dashboard-stat h3 {
+  margin-bottom: 8px;
+}
+
+.course-summary,
+.upcoming-item,
+.activity-item,
+.my-course-card,
+.profile-card {
+  color: var(--white);
+}
+
+body.light-mode .course-summary,
+body.light-mode .upcoming-item,
+body.light-mode .activity-item,
+body.light-mode .my-course-card,
+body.light-mode .profile-card {
+  color: var(--text);
+}
+
+.my-course-card {
+  padding: 20px;
+}
+
+.my-course-card .card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.my-course-card .thumb {
+  width: 84px;
+  height: 84px;
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+}
+
+.course-summary {
+  display: grid;
+  gap: 12px;
+}
+
+.course-summary .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255,255,255,0.72);
+  gap: 12px;
+}
+
+body.light-mode .course-summary .meta {
+  color: var(--text-soft);
+}
+
+.menu-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.activity-item span,
+.upcoming-item span {
+  color: rgba(255,255,255,0.72);
+}
+
+body.light-mode .activity-item span,
+body.light-mode .upcoming-item span {
+  color: var(--text-soft);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.pill.success {
+  background: rgba(33, 201, 125, 0.12);
+  color: var(--success);
+}
+
+.pill.warning {
+  background: rgba(255, 183, 3, 0.12);
+  color: var(--warning);
+}
+
+.pill.primary {
+  background: rgba(97,211,255,0.12);
+  color: var(--cyan);
+}
+
+.profile-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.user-role {
+  display: inline-flex;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(124,92,255,0.15);
+  border: 1px solid rgba(124,92,255,0.18);
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.course-list-small {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+.course-list-small li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: rgba(255,255,255,0.84);
+}
+
+body.light-mode .course-list-small li {
+  color: var(--text-soft);
+}
+
+.instructor-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.instructor-card {
+  padding: 24px;
+}
+
+.instructor-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.instructor-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  color: rgba(255,255,255,0.75);
+}
+
+body.light-mode .instructor-meta {
+  color: var(--text-soft);
+}
+
+.team-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.team-card {
+  padding: 24px;
+  text-align: center;
+}
+
+.team-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.contact-card {
+  padding: 26px;
+}
+
+.contact-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: grid;
+  gap: 14px;
+}
+
+.contact-card li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255,255,255,0.75);
+}
+
+body.light-mode .contact-card li {
+  color: var(--text-soft);
+}
+
+.contact-card .icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(97,211,255,0.12);
+  color: var(--cyan);
+}
+
+.warning-box {
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: rgba(255,183,3,0.1);
+  border: 1px solid rgba(255,183,3,0.2);
+  color: #ffd976;
+}
+
+body.light-mode .warning-box {
+  color: #8a6800;
+}
+
+@media (max-width: 810px) {
+  .instructor-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

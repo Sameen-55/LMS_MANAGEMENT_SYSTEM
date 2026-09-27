@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Online Education</title>
+    <meta name="description" content="Login to your Online Education student account and continue learning." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="logo">ONLINE <span>EDUCATION</span></a>
+        <div class="main-nav" id="mainNav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html" class="active">Login</a></li>
+            <li><a href="register.html" class="btn btn-primary nav-cta">Get Started</a></li>
+          </ul>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <button class="mobile-toggle" type="button" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="auth-shell">
+      <div class="auth-layout">
+        <div class="auth-visual">
+          <div class="eyebrow" style="width: fit-content;">Learning Portal</div>
+          <h2>Welcome back to your learning journey</h2>
+          <p style="color: rgba(255,255,255,0.8);">Continue building skills with expert courses, live sessions, and practical projects designed for your growth.</p>
+          <ul class="auth-list">
+            <li><i class="fas fa-check"></i> Personalized course progress tracking</li>
+            <li><i class="fas fa-check"></i> Mentor-backed learning roadmap</li>
+            <li><i class="fas fa-check"></i> Flexible study schedule</li>
+          </ul>
+        </div>
+
+        <div class="auth-form-panel">
+          <div class="section-header" style="margin-bottom: 28px; text-align: left; max-width: 100%;">
+            <span class="eyebrow">Sign In</span>
+            <h2 style="margin-top: 16px;">Login to your account</h2>
+          </div>
+
+          <form id="loginForm" novalidate>
+            <div class="form-grid">
+              <div class="input-group">
+                <label for="loginEmail">Email</label>
+                <input id="loginEmail" name="email" type="email" placeholder="student@onlineeducation.com" />
+              </div>
+
+              <div class="input-group">
+                <label for="loginPassword">Password</label>
+                <div class="password-wrapper">
+                  <input id="loginPassword" name="password" type="password" placeholder="Enter your password" />
+                  <button type="button" class="password-toggle" data-toggle-password="loginPassword" aria-label="Show or hide password"><i class="fas fa-eye"></i></button>
+                </div>
+              </div>
+
+              <div class="checkbox-row">
+                <label class="checkbox-inline"><input type="checkbox" /> Remember Me</label>
+                <a href="#" class="form-note">Forgot Password?</a>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+          </form>
+
+          <p class="form-note" style="margin-top: 22px;">Don’t have an account? <a href="register.html">Register</a></p>
+        </div>
+      </div>
+    </main>
+
+    <div class="toast" id="toast"></div>
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+  </body>
+</html>

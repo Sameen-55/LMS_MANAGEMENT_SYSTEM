@@ -1,0 +1,34 @@
+/* Responsive fallback enhancements for smaller screens */
+
+@media (max-width: 620px) {
+  .main-nav {
+    position: static;
+  }
+
+  .nav-wrapper {
+    min-height: 72px;
+  }
+
+  .logo {
+    font-size: 1.05rem;
+    letter-spacing: 0.06em;
+  }
+
+  .auth-visual {
+    padding: 24px 18px;
+  }
+
+  .auth-form-panel {
+    padding: 26px 18px;
+  }
+
+  .detail-card,
+  .lesson-sidebar,
+  .lesson-main,
+  .progress-card,
+  .dashboard-card,
+  .profile-card,
+  .Contact-card {
+    padding: 18px;
+  }
+}

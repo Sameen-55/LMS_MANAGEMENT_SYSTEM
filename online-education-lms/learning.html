@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning | Online Education</title>
+    <meta name="description" content="Lesson player for your current course with progress tracking and curriculum navigation." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="logo">ONLINE <span>EDUCATION</span></a>
+        <div class="main-nav" id="mainNav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="login.html" class="btn btn-secondary nav-cta">Logout</a></li>
+          </ul>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <button class="mobile-toggle" type="button" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="container lesson-shell">
+      <aside class="lesson-sidebar">
+        <h3>Course Curriculum</h3>
+        <div class="lesson-list-group">
+          <div class="lesson-item active" data-index="0">
+            <h4>Introduction</h4>
+            <small>02 min</small>
+          </div>
+          <div class="lesson-item" data-index="1">
+            <h4>HTML Basics</h4>
+            <small>08 min</small>
+          </div>
+          <div class="lesson-item" data-index="2">
+            <h4>CSS Basics</h4>
+            <small>12 min</small>
+          </div>
+          <div class="lesson-item" data-index="3">
+            <h4>JavaScript Fundamentals</h4>
+            <small>15 min</small>
+          </div>
+          <div class="lesson-item" data-index="4">
+            <h4>Final Project</h4>
+            <small>18 min</small>
+          </div>
+        </div>
+      </aside>
+
+      <section class="lesson-main">
+        <h3 id="lessonTitle">Introduction</h3>
+        <div class="video-player">
+          <div class="player-icon"><i class="fas fa-play"></i></div>
+        </div>
+
+        <div class="lesson-meta-bar">
+          <span id="lessonMeta">Module 1 • 02 minutes</span>
+          <span id="progressBadge">Progress: 0%</span>
+        </div>
+
+        <p id="lessonDescription">Welcome to the course. This introductory module provides the overall roadmap, learning goals, and expected outcomes for your web development journey.</p>
+
+        <div class="lesson-actions">
+          <button type="button" id="prevLesson" class="btn btn-secondary">Previous Lesson</button>
+          <button type="button" id="nextLesson" class="btn btn-primary">Next Lesson</button>
+          <button type="button" id="markComplete" class="btn btn-secondary">Mark as Complete</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast"></div>
+    <script src="js/main.js"></script>
+    <script src="js/learning.js"></script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | Online Education</title>
+    <meta name="description" content="Manage your student profile, bio, enrolled courses, certifications and learning statistics." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="logo">ONLINE <span>EDUCATION</span></a>
+        <div class="main-nav" id="mainNav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="login.html" class="btn btn-secondary nav-cta">Logout</a></li>
+          </ul>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        <button class="mobile-toggle" type="button" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <div>
+            <div class="breadcrumbs"><a href="dashboard.html">Dashboard</a> <span>/</span> <span>Profile</span></div>
+            <h1>Student profile</h1>
+          </div>
+          <button type="button" class="btn btn-primary" id="editProfileButton">Edit Profile</button>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 20px;">
+        <div class="container profile-grid">
+          <aside class="profile-card">
+            <div class="profile-header">
+              <div class="profile-avatar" id="profileAvatar">AS</div>
+              <div>
+                <h3 class="profile-name" id="profileNameDisplay">Amina Shah</h3>
+                <span class="user-role">Full-Stack Learner</span>
+              </div>
+            </div>
+            <p class="muted-text">Email: <span id="profileEmailDisplay">amina@onlineeducation.com</span></p>
+            <p class="muted-text">Phone: +92 300 1234567</p>
+            <p id="profileBioDisplay" style="margin-top: 20px;">I’m a passionate learner focused on building modern digital products and improving my web development skills with practical project experience.</p>
+            <div class="tag-list" id="profileSkillsDisplay">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+            </div>
+          </aside>
+
+          <div class="profile-card">
+            <h3>Profile Details</h3>
+            <div class="summary-grid">
+              <div class="summary-card">
+                <span>Enrolled Courses</span>
+                <strong>06</strong>
+              </div>
+              <div class="summary-card">
+                <span>Certificates</span>
+                <strong>03</strong>
+              </div>
+              <div class="summary-card">
+                <span>Avg. Completion</span>
+                <strong>62%</strong>
+              </div>
+            </div>
+
+            <form id="profileForm" style="margin-top: 28px; gap: 18px; display: grid;">
+              <div class="input-group">
+                <label for="profileName">Full Name</label>
+                <input id="profileName" name="name" type="text" value="Amina Shah" required />
+              </div>
+              <div class="input-group">
+                <label for="profileEmail">Email</label>
+                <input id="profileEmail" name="email" type="email" value="amina@onlineeducation.com" required />
+              </div>
+              <div class="input-group">
+                <label for="profileBio">Bio</label>
+                <textarea id="profileBio" name="bio" rows="4">I’m a passionate learner focused on building modern digital products and improving my web development skills with practical project experience.</textarea>
+              </div>
+              <div class="input-group">
+                <label for="profileSkills">Skills</label>
+                <input id="profileSkills" name="skills" type="text" value="HTML, CSS, JavaScript, React" />
+              </div>
+              <div class="profile-actions">
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+                <button type="button" class="btn btn-secondary" id="cancelProfileEdit">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast"></div>
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
